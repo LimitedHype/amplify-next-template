@@ -18,7 +18,9 @@ export const auth = defineAuth({
       // loginWithAmazon: {
       //   clientId: secret('LOGINWITHAMAZON_CLIENT_ID'),
       //   clientSecret: secret('LOGINWITHAMAZON_CLIENT_SECRET'),
-      // }
+      // },
+      callbackUrls: ['http://localhost:3000'], // Add your callback URLs here
+      logoutUrls: ['http://localhost:3000'], // Add your logout URLs here
     },
   },
   /**
